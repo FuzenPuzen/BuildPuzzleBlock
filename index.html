@@ -56,16 +56,17 @@
         updateBannerVisibility();
       }
 
+        var buildversion = "?id=4";
       var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/BuildPuzzleBlock.loader.js?id=3";
+        var loaderUrl = buildUrl + "/BuildPuzzleBlock.loader.js" + buildversion;
       var config = {
-          dataUrl: buildUrl + "/BuildPuzzleBlock.data?id=3",
-          frameworkUrl: buildUrl + "/BuildPuzzleBlock.framework.js?id=3",
-          codeUrl: buildUrl + "/BuildPuzzleBlock.wasm?id=3",
+          dataUrl: buildUrl + "/BuildPuzzleBlock.data" + buildversion,
+          frameworkUrl: buildUrl + "/BuildPuzzleBlock.framework.js" + buildversion,
+          codeUrl: buildUrl + "/BuildPuzzleBlock.wasm" + buildversion,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "New Try",
-        productVersion: "1.0.7",
+        productVersion: "1.0.8",
         showBanner: unityShowBanner,
       };
 
